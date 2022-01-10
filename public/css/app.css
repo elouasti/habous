@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Monadi';
-    src: url('../fonts/Monadi.ttf'); 
+    src: url(/fonts/Monadi.ttf?31fa59135c6abb688019ec291c8609d4); 
     font-weight: normal;
     font-style: normal;
 }
@@ -347,6 +347,7 @@ g{
 .swiper-wrapper{
     width: 100%;
     height: 100%;
+    cursor: -webkit-grab;
     cursor: grab;
     
 
