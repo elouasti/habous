@@ -112,28 +112,105 @@
 
 {{-- Baramej Begin--}}
 <div class="baramej">
-  <h4>آخر المقالات</h4>
-
+  <div class="baramej_head">
+    <a href="">عرض الكل</a>
+    <h4>آخر الإعلانات</h4>
+  </div>
   <div class="baramej_body">
     <div class="baramej_content">
       <div class="baramej_block">
         <img src="{{asset('assets/img/affaires-administratifs-annonce.jpg')}}" alt="" class="baramej_image">
-        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد -الميزانية العامة للدولة- دورة 19 ديسمبر 2021</p>
+        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
         <a class="baramej_button" href="">اقرأ المزيد</a>
       </div>
       <div class="baramej_block">
         <img src="{{asset('assets/img/affaires-administratifs2.jpg')}}" alt="" class="baramej_image">
-        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد -الميزانية العامة للدولة- دورة 19 ديسمبر 2021</p>
+        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد دورة 19 ديسمبر 2021</p>
         <a class="baramej_button" href="">اقرأ المزيد</a>
       </div>
       <div class="baramej_block">
         <img src="{{asset('assets/img/rh-mhai-dalil-rh-octobre.jpg')}}" alt="" class="baramej_image">
-        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد -الميزانية العامة للدولة- دورة 19 ديسمبر 2021</p>
+        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
+        <a class="baramej_button" href="">اقرأ المزيد</a>
+      </div>
+      <div class="baramej_block">
+        <img src="{{asset('assets/img/rh-mhai-dalil-rh-octobre.jpg')}}" alt="" class="baramej_image">
+        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
         <a class="baramej_button" href="">اقرأ المزيد</a>
       </div>
     </div>
   </div>
 </div>
-{{-- Baramej End --}}
 
+
+<div class="royal">
+  <div class="royal_heading">
+    <a href="">عرض الكل</a>
+    <h4>إمارة المؤمنين</h4>
+  </div>
+  <div class="royal_body">
+    <div class="royal_content">
+      <div class="left_block">
+        <div class="royal_block left_block_content">
+          <img src="{{asset('assets/img/affaires-administratifs-annonce.jpg')}}" alt="" class="royal_image">
+          <div class="royal_block_text">
+            <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2031</p>
+            <a class="royal_button" href="">اقرأ المزيد</a>
+          </div>
+        </div>
+        <div class="royal_block left_block_content">
+          <img src="{{asset('assets/img/affaires-administratifs2.jpg')}}" alt="" class="royal_image">
+          <div class="royal_block_text">
+            <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد دورة 19 ديسمبر 2021</p>
+            <a class="royal_button" href="">اقرأ المزيد</a>
+          </div>
+        </div>
+        <div class="royal_block left_block_content">
+          <img src="{{asset('assets/img/rh-mhai-dalil-rh-octobre.jpg')}}" alt="" class="royal_image">
+          <div class="royal_block_text">
+            <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
+            <a class="royal_button" href="">اقرأ المزيد</a>
+          </div>
+        </div>
+      </div>
+      <div class="royal_block main_block">
+        <img src="{{asset('assets/img/rh-mhai-dalil-rh-octobre.jpg')}}" alt="" class="royal_image">
+        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
+        <a class="royal_button" href="">اقرأ المزيد</a>
+      </div>
+    </div>
+</div>
+{{-- Baramej End --}}
+<div class="list">
+  <div class="list_content safakat">
+    <a href="" class="list_link" id="safakat_link">
+      <img src="{{asset('assets/img/proposal.png')}}" alt="Mosque Hassan 2">
+      البرامج التوقعية للصفقات
+    </a>
+  </div>
+  <div class="list_content talabat">
+    <a href="" class="list_link" id="talabat_link">
+    <img src="{{asset('assets/img/contract.png')}}" alt="Mosque Hassan 2">
+      السمسرات الوقفية
+    </a>
+  </div>
+  <div class="list_content samsarat ">
+    <a href="" class="list_link" id="samsarat_link">
+      <img src="{{asset('assets/img/contract.png')}}" alt="Mosque Hassan 2">
+      طلبات العروض
+    </a>
+  </div>
+  <div class="list_content tachri3">
+      <a href="" class="list_link" id="tachri3_link">
+        <img src="{{asset('assets/img/contract.png')}}" alt="Mosque Hassan 2">
+        النصوص التشريعية
+      </a>
+  </div>
+  <div class="list_content maroc">
+    <a href="" class="list_link" id="maroc_link">
+      <img src="{{asset('assets/img/contract.png')}}" alt="Mosque Hassan 2">
+      المغرب
+    </a>
+  </div>
+</div>
 @endsection
