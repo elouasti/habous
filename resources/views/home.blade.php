@@ -43,39 +43,19 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">
-        <img src="https://via.placeholder.com/600x400" alt="">
-        <div class="swiper-slide-text">
-          <div class="title" data-swiper-parallax="-300">
-            <h3>برامج اعلامية دينية ووثائقية تهتم بالشأن الديني المغربي</h3>
-          </div>
-          <div class="subtitle" data-swiper-parallax="-200">
-            <a href=""> ...قراءة المزيد</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <img src="https://via.placeholder.com/600x400" alt="">
-        <div class="swiper-slide-text">
-          <div class="title" data-swiper-parallax="-300">
-            <h3>برامج اعلامية دينية ووثائقية تهتم بالشأن الديني المغربي</h3>
-          </div>
-          <div class="subtitle" data-swiper-parallax="-200">
-            <a href=""> ...قراءة المزيد</a>
+      @foreach ($newposts as $newpost)
+        <div class="swiper-slide">
+          <img src="{{'/storage/'.$newpost->image}}" alt="">
+          <div class="swiper-slide-text">
+            <div class="title" data-swiper-parallax="-300">
+              <h3>{{Str::limit($newpost->title,60,' ')}}</h3>
+            </div>
+            <div class="subtitle" data-swiper-parallax="-200">
+              <a href=""> ...قراءة المزيد</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="swiper-slide" >
-        <img src="https://via.placeholder.com/600x400" alt="">
-        <div class="swiper-slide-text">
-          <div class="title" data-swiper-parallax="-300">
-            <h3>برامج اعلامية دينية ووثائقية تهتم بالشأن الديني المغربي</h3>
-          </div>
-          <div class="subtitle" data-swiper-parallax="-200">
-            <a href=""> ...قراءة المزيد</a>
-          </div>
-        </div>
-      </div>
+      @endforeach
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -118,30 +98,16 @@
   </div>
   <div class="baramej_body">
     <div class="baramej_content">
-      <div class="baramej_block">
-        <img src="{{asset('assets/img/affaires-administratifs-annonce.jpg')}}" alt="" class="baramej_image">
-        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
-        <a class="baramej_button" href="">اقرأ المزيد</a>
-      </div>
-      <div class="baramej_block">
-        <img src="{{asset('assets/img/affaires-administratifs2.jpg')}}" alt="" class="baramej_image">
-        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد دورة 19 ديسمبر 2021</p>
-        <a class="baramej_button" href="">اقرأ المزيد</a>
-      </div>
-      <div class="baramej_block">
-        <img src="{{asset('assets/img/rh-mhai-dalil-rh-octobre.jpg')}}" alt="" class="baramej_image">
-        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
-        <a class="baramej_button" href="">اقرأ المزيد</a>
-      </div>
-      <div class="baramej_block">
-        <img src="{{asset('assets/img/rh-mhai-dalil-rh-octobre.jpg')}}" alt="" class="baramej_image">
-        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
-        <a class="baramej_button" href="">اقرأ المزيد</a>
-      </div>
+      @foreach ($posts as $post)
+        <div class="baramej_block">
+          <img src="{{asset('/storage/'.$post->image)}}" alt="" class="baramej_image">
+          <p>{{$post->excerpt}}</p>
+          <a class="baramej_button" href="">اقرأ المزيد</a>
+        </div>
+      @endforeach
     </div>
   </div>
 </div>
-
 
 <div class="royal">
   <div class="royal_heading">
@@ -151,33 +117,23 @@
   <div class="royal_body">
     <div class="royal_content">
       <div class="left_block">
-        <div class="royal_block left_block_content">
-          <img src="{{asset('assets/img/affaires-administratifs-annonce.jpg')}}" alt="" class="royal_image">
-          <div class="royal_block_text">
-            <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2031</p>
-            <a class="royal_button" href="">اقرأ المزيد</a>
+        @foreach ($royals as $royal)
+          <div class="royal_block left_block_content">
+            <img src="{{'/storage/'.$royal->image}}" alt="" class="royal_image">
+            <div class="royal_block_text">
+              <p>{{$royal->title}}</p>
+              <a class="royal_button" href="">اقرأ المزيد</a>
+            </div>
           </div>
-        </div>
-        <div class="royal_block left_block_content">
-          <img src="{{asset('assets/img/affaires-administratifs2.jpg')}}" alt="" class="royal_image">
-          <div class="royal_block_text">
-            <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد دورة 19 ديسمبر 2021</p>
-            <a class="royal_button" href="">اقرأ المزيد</a>
-          </div>
-        </div>
-        <div class="royal_block left_block_content">
-          <img src="{{asset('assets/img/rh-mhai-dalil-rh-octobre.jpg')}}" alt="" class="royal_image">
-          <div class="royal_block_text">
-            <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
-            <a class="royal_button" href="">اقرأ المزيد</a>
-          </div>
-        </div>
+        @endforeach
       </div>
-      <div class="royal_block main_block">
-        <img src="{{asset('assets/img/rh-mhai-dalil-rh-octobre.jpg')}}" alt="" class="royal_image">
-        <p>المترشحون المقبولون لاجتياز الاختبار الشفوي الخاص بامتحان الكفاءة المهنية لولوج درجة متصرف من الدرجة الثانية ومتصرف من الدرجة الثانية متعاقد  دورة 19 ديسمبر 2021</p>
-        <a class="royal_button" href="">اقرأ المزيد</a>
-      </div>
+      @foreach ($lastroyalpost as $lastroyalpost)
+        <div class="royal_block main_block">
+          <img src="{{'/storage/'.$lastroyalpost->image}}" alt="" class="royal_image">
+          <p>{{$lastroyalpost->title}}</p>
+          <a class="royal_button" href="">اقرأ المزيد</a>
+        </div>
+      @endforeach
     </div>
 </div>
 {{-- Baramej End --}}

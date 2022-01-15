@@ -369,8 +369,9 @@ g{
 .swiper-slide-text h3{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #212529;
-    text-shadow: 0 1px 0 #fff;
+    color: #fff;
+    
+    
 }
 .subtitle a{
     height: 40px;
@@ -700,8 +701,8 @@ g{
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
     
+    line-height: 1.4rem;
 
 }
 .left_block_content img{
@@ -718,4 +719,14 @@ g{
 .main_block img{
     height: 300px;
     width: 100%;
+}
+
+
+/*******Footer********/
+
+footer{
+    width: 100%;
+    background-color: #212529;
+    color: #fff;
+    border: 1px solid #212529;
 }

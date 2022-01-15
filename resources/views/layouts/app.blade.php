@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        
         <title>Laravel</title>
     </head>
     <body>
@@ -158,9 +159,24 @@
 
         @yield('content')
 
+        <!-- Footer -->
         <footer>
-            <h5>Footer</h5>
+            <div class="footer_top">
+
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_link">
+                    <img src="{{asset('assets/img/logo.png')}}" width="130" alt="">
+                </div>
+                <div class="footer_middle">
+
+                </div>
+                <div class="footer_right">
+
+                </div>
+            </div>
         </footer>
+        <!-- Footer -->
         <script src="{{asset('js/app.js')}}"></script>
     </body>
 </html>
