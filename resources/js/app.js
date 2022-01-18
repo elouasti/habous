@@ -67,3 +67,18 @@ const swiper = new Swiper('.swiper', {
     
   });
 
+
+var paths=document.querySelectorAll('.map_links a');
+var links=document.querySelectorAll('.regions a');
+
+paths.forEach(path => {
+    path.addEventListener('mouseenter',function(e){
+        console.log('biginning');
+        console.log(this.id);
+        if(this.id=='undifined'){
+            console.log('enter');
+            document.querySelector('#link-'+this.id).style.color='red';
+        }
+        console.log('outside');
+    });
+});

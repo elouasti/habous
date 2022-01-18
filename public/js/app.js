@@ -2118,6 +2118,21 @@ var swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
     prevEl: '.swiper-button-prev'
   }
 });
+var paths = document.querySelectorAll('.map_links a');
+var links = document.querySelectorAll('.regions a');
+paths.forEach(function (path) {
+  path.addEventListener('mouseenter', function (e) {
+    console.log('biginning');
+    console.log(this.id);
+
+    if (this.id == 'undifined') {
+      console.log('enter');
+      document.querySelector('#link-' + this.id).style.color = 'red';
+    }
+
+    console.log('outside');
+  });
+});
 
 /***/ }),
 
