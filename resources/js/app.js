@@ -73,12 +73,40 @@ var links=document.querySelectorAll('.regions a');
 
 paths.forEach(path => {
     path.addEventListener('mouseenter',function(e){
-        console.log('biginning');
+        
         console.log(this.id);
-        if(this.id=='undifined'){
-            console.log('enter');
-            document.querySelector('#link-'+this.id).style.color='red';
+        if(this.id!=='undifined'){
+            var id=this.id.replace('m-','');
+            console.log(id);
+            document.querySelector('#'+id).classList.add('is_active');
+            document.querySelector('#m-'+id).classList.add('map_hover');
         }
-        console.log('outside');
+        
     });
+    path.addEventListener('mouseleave',function(e){
+        if(this.id!=='undifined'){
+            var id=this.id.replace('m-','');
+            document.querySelector('#'+id).classList.remove('is_active');
+            document.querySelector('#m-'+id).classList.remove('map_hover');
+        }
+    })
+});
+links.forEach(link => {
+    link.addEventListener('mouseenter',function(e){
+        
+       
+        if(this.id!=='undifined'){
+            
+            document.querySelector('#'+this.id).classList.add('is_active');
+            document.querySelector('#'+this.id.replace('link','m-link')).classList.add('map_hover');
+        }
+        
+    });
+    link.addEventListener('mouseleave',function(e){
+        if(this.id!=='undifined'){
+            
+            document.querySelector('#'+this.id).classList.remove('is_active');
+            document.querySelector('#'+this.id.replace('link','m-link')).classList.remove('map_hover');
+        }
+    })
 });

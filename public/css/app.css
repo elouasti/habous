@@ -261,6 +261,8 @@ nav{
     padding: 0 1rem;
     margin-bottom: 5rem;
 }
+
+/************************/
 .map{
     position: relative;
     width: 400px;
@@ -300,6 +302,19 @@ nav{
     background: #b0b0b1b7;
     border-radius: 5px;
 }
+.region_list{
+    font-size: .8rem;
+    color: #212529;
+    transition: ease .2s;
+}
+
+.is_active{
+    color: #015E48;
+    
+}
+.map_hover path{
+    fill: #015E48;
+}
 .regions{
     position: absolute;
     top: 3rem;
@@ -309,15 +324,7 @@ nav{
     z-index: 100;
 }
 
-.region_list{
-    font-size: .8rem;
-    color: #212529;
-    transition: ease .2s;
-}
-.region_list:hover{
-    color: #BFA663;
- 
-}
+
 
 path{
     fill: #0b776b;
@@ -325,10 +332,7 @@ path{
     transition: fill 0.3s;
     
 }
-path:hover{
-    cursor: pointer;
-    fill: #15574f;
-}
+
 g{
     transform: rotate(-3deg);
 }
