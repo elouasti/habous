@@ -63,6 +63,7 @@
     <div class="swiper-button-next"></div>
   </div>
 </div>
+
 <div class="quick_links">
   <a class="quick_links_link" href="#">
     <img src="{{asset('assets/img/mosquee-hassan2.png')}}" alt="Mosque Hassan 2">
@@ -108,6 +109,7 @@
     </div>
   </div>
 </div>
+{{-- Baramej End --}}
 
 <div class="royal">
   <div class="royal_heading">
@@ -135,8 +137,13 @@
         </div>
       @endforeach
     </div>
+  </div>
 </div>
-{{-- Baramej End --}}
+
+{{-- Ministre --}}
+
+{{-- Ministre End --}}
+
 <div class="list">
   <div class="list_content safakat">
     <a href="" class="list_link" id="safakat_link">

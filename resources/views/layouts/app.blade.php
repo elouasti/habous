@@ -38,7 +38,7 @@
                                         <img src="{{asset('assets/img/mosque.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
-                                        <a class="nav_link" href="#">الأوقاف</a>
+                                        <a class="nav_link" href="#">المجلس العلمي الاعلى</a>
                                     </div>
                                 </li>
                                 <li class="megamenu_item">
@@ -46,7 +46,7 @@
                                         <img src="{{asset('assets/img/bab-mansour.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
-                                        <a class="nav_link" href="#">الشؤون الإسلامية</a>
+                                        <a class="nav_link" href="#">المجلس العلمي المغربي لأوربا</a>
                                     </div>
                                 </li>
                                 <li class="megamenu_item">
@@ -54,7 +54,7 @@
                                         <img src="{{asset('assets/img/mosquee.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
-                                        <a class="nav_link" href="#">المساجد</a>
+                                        <a class="nav_link" href="#">مؤسسة محمد السادس للعلماء الأفارقة</a>
                                     </div>
                                 </li>
                                 <li class="megamenu_item">
@@ -62,7 +62,7 @@
                                         <img src="{{asset('assets/img/mosque.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
-                                        <a class="nav_link" href="#">القيمون الدينيون</a>
+                                        <a class="nav_link" href="#">الرابطة المحمدية للعلماء</a>
                                     </div>
                                 </li>
                                 <li class="megamenu_item">
@@ -70,7 +70,7 @@
                                         <img src="{{asset('assets/img/mosque.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
-                                        <a class="nav_link" href="#">التعليم العتيق ومحو الأمية بالمساجد</a>
+                                        <a class="nav_link" href="#">مؤسسة محمد السادس لنشر المصحف الشريف</a>
                                     </div>
                                 </li>
                                 <li class="megamenu_item">
@@ -79,7 +79,7 @@
 
                                     </div>
                                     <div class="menu_link">
-                                        <a class="nav_link" href="#">الشؤون الإدارية التعاون</a>
+                                        <a class="nav_link" href="#">المجلس الأعلى لمراقبة مالية الأوقاف العامة</a>
                                     </div>
                                 </li>
                                 <li class="megamenu_item">
@@ -87,18 +87,26 @@
                                         <img src="{{asset('assets/img/mosque.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
-                                        <a class="nav_link" href="#">الشؤون القانونية</a>
+                                        <a class="nav_link" href="#">مدرسة العلوم الإسلامية</a>
                                     </div>
                                 </li>
                             </ul>
                             <ul class="content">
-                                <li class="megamenu_item megamenu_header"> المديريات</li>
+                                <li class="megamenu_item megamenu_header">المؤسسات</li>
                                 <li class="megamenu_item">
                                     <div class="menu_icon">
-                                        <img src="{{asset('assets/img/mosque.png')}}" alt="Mosque" width="30" height="30">
+                                        <img src="{{asset('assets/img/menara-gardens.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
-                                        <a class="nav_link" href="#">الأوقاف</a>
+                                        <a class="nav_link" href="#">جامعة القرويين</a>
+                                    </div>
+                                </li>
+                                <li class="megamenu_item">
+                                    <div class="menu_icon">
+                                        <img src="{{asset('assets/img/house.png')}}" alt="Mosque" width="30" height="30">
+                                    </div>
+                                    <div class="menu_link">
+                                        <a class="nav_link" href="#">دار الحديث الحسنية</a>
                                     </div>
                                 </li>
                                 <li class="megamenu_item">
@@ -106,12 +114,64 @@
                                         <img src="{{asset('assets/img/bab-mansour.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
+                                        <a class="nav_link" href="#">معهد محمد السادس للقراءات والدراسات القرآنية</a>
+                                    </div>
+                                </li>
+                                <li class="megamenu_item">
+                                    <div class="menu_icon">
+                                        <img src="{{asset('assets/img/mosquee.png')}}" alt="Mosque" width="30" height="30">
+                                    </div>
+                                    <div class="menu_link">
+                                        <a class="nav_link" href="#">معهد محمد السادس لتكوين الأئمة والمرشدين والمرشدات</a>
+                                    </div>
+                                </li>
+                                <li class="megamenu_item">
+                                    <div class="menu_icon">
+                                        <img src="{{asset('assets/img/castle.png')}}" alt="Mosque" width="30" height="30">
+                                    </div>
+                                    <div class="menu_link">
+                                        <a class="nav_link" href="#">المعهد الملكي للبحث في تاريخ المغرب</a>
+                                    </div>
+                                </li>
+                                <li class="megamenu_item">
+                                    <div class="menu_icon">
+                                        <img src="{{asset('assets/img/fez.png')}}" alt="Mosque" width="30" height="30">
+
+                                    </div>
+                                    <div class="menu_link">
+                                        <a class="nav_link" href="#">معهد الفكر والحضارة الإسلامية بالدار البيضاء</a>
+                                    </div>
+                                </li>
+                                <li class="megamenu_item">
+                                    <div class="menu_icon">
+                                        <img src="{{asset('assets/img/mosque.png')}}" alt="Mosque" width="30" height="30">
+                                    </div>
+                                    <div class="menu_link">
+                                        <a class="nav_link" href="#">معهد تاريخ العلوم الإسلامية</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="content">
+                                <li class="megamenu_item megamenu_header"> المديريات</li>
+                                <li class="megamenu_item">
+                                    <div class="menu_icon">
+                                        <img src="{{asset('assets/img/menara-gardens.png')}}" alt="Mosque" width="30" height="30">
+                                    </div>
+                                    <div class="menu_link">
+                                        <a class="nav_link" href="#">الأوقاف</a>
+                                    </div>
+                                </li>
+                                <li class="megamenu_item">
+                                    <div class="menu_icon">
+                                        <img src="{{asset('assets/img/mosquee.png')}}" alt="Mosque" width="30" height="30">
+                                    </div>
+                                    <div class="menu_link">
                                         <a class="nav_link" href="#">الشؤون الإسلامية</a>
                                     </div>
                                 </li>
                                 <li class="megamenu_item">
                                     <div class="menu_icon">
-                                        <img src="{{asset('assets/img/rabat (1).png')}}" alt="Mosque" width="30" height="30">
+                                        <img src="{{asset('assets/img/mosquee-hassan2.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
                                         <a class="nav_link" href="#">المساجد</a>
@@ -127,7 +187,7 @@
                                 </li>
                                 <li class="megamenu_item">
                                     <div class="menu_icon">
-                                        <img src="{{asset('assets/img/mosque.png')}}" alt="Mosque" width="30" height="30">
+                                        <img src="{{asset('assets/img/mosquee.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
                                         <a class="nav_link" href="#">التعليم العتيق ومحو الأمية بالمساجد</a>
@@ -135,7 +195,7 @@
                                 </li>
                                 <li class="megamenu_item">
                                     <div class="menu_icon">
-                                        <img src="{{asset('assets/img/mosque.png')}}" alt="Mosque" width="30" height="30">
+                                        <img src="{{asset('assets/img/rabat (1).png')}}" alt="Mosque" width="30" height="30">
 
                                     </div>
                                     <div class="menu_link">
@@ -144,13 +204,14 @@
                                 </li>
                                 <li class="megamenu_item">
                                     <div class="menu_icon">
-                                        <img src="{{asset('assets/img/mosque.png')}}" alt="Mosque" width="30" height="30">
+                                        <img src="{{asset('assets/img/rabat.png')}}" alt="Mosque" width="30" height="30">
                                     </div>
                                     <div class="menu_link">
                                         <a class="nav_link" href="#">الشؤون القانونية</a>
                                     </div>
                                 </li>
                             </ul>
+                            
                         </div>
                     </li>
                     <li class="nav_item navigation"><a class="nav_link" href="">كرونولوجيا</a></li>

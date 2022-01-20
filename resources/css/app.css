@@ -12,10 +12,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     background-color: #fff;
     font-family: 'Monadi',sans-serif;
+    
 }
 
 a{
@@ -33,9 +35,10 @@ header{
     background-repeat: repeat;
     background-position: center;
     z-index: 500;
+    overflow: hidden;
+    
 }
 .top{
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     
@@ -44,18 +47,19 @@ nav{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    width: 100%;
-    margin: 0 auto;
+    width: 100% !important;
     background-color: #C1A783;
     z-index: 600;
-    height: 2.8rem;
-    
+    height: 2.8rem; 
+    border: 1px solid red; 
 }
+
 .top_logo{
     height: 6rem;
     width: 100px;
     
 }
+
 #habous-logo{
     height: 100%;
     width: 100%;
@@ -65,24 +69,19 @@ nav{
     display: none;
 }
 
-
 .nav_list{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     padding: 0;
     margin-top: 5px;
-    
 }
 
 .nav_item{
     margin: 0 1rem;
     display: flex;
     padding: 0 2px;
-    justify-content: center;
-    
-    
-    
+    justify-content: center; 
 }
 
 .dropdown_icon{
@@ -99,7 +98,8 @@ nav{
     margin: 0;
     transition: ease .3s;
     
-} .nav_link:hover{
+} 
+.nav_link:hover{
     color: #64553e;
 }
 .home_icon{
@@ -111,22 +111,23 @@ nav{
     justify-content: right;
     width: 100%;
     top: 8.8rem;
+    
     right: 0;
     padding: 1rem;
     background-color: #015E48;
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 
 	    0px 1px 1px 0px rgb(0 0 0 / 14%), 
  	    0px 1px 3px 0px rgb(0 0 0 / 12%);
-     visibility: hidden;
+    visibility: hidden;
     opacity: 0; 
-    transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+    transition: opacity .1s ease-in-out, transform .1s ease-in-out;
     
 }
 .megamenu .nav_link{
-    color: #fff;
+    color: rgb(230, 228, 228);
 }
 .megamenu .nav_link:hover{
-    color: #2a9d8f;
+    color: #023328;
 }
 .content{
     margin:.5rem 1rem;
@@ -138,9 +139,13 @@ nav{
 .megamenu_item{
     display: flex;
     flex-direction: row-reverse;
+    
 }
 .menu_link{
     text-align: right;
+    margin-right: .5rem;
+    line-height: 3rem;
+    
 }
 
 .dropdown:hover > .megamenu{
@@ -172,9 +177,7 @@ nav{
         height: 0;
         max-width: 350px;
         overflow: hidden;
-        padding: 0;
-        
-        
+        padding: 0;     
     }
     .dropdown:hover > .megamenu{
         height: 100%;
@@ -253,6 +256,9 @@ nav{
     }
    
 }
+
+/************************/
+
 .top_section{
     width: 100%;
     height: 400px;
@@ -262,7 +268,6 @@ nav{
     margin-bottom: 5rem;
 }
 
-/************************/
 .map{
     position: relative;
     width: 400px;
@@ -285,7 +290,7 @@ nav{
     height: 4px;
     align-self: right;
     right: 0;
-    bottom: 20%;
+    bottom: 10%;
     border-radius: 0 5px 5px 0;
     background: #BFA663;
 }
@@ -298,7 +303,7 @@ nav{
     height: 4px;
     align-self: right;
     right: 0;
-    bottom: 20%;
+    bottom: 10%;
     background: #b0b0b1b7;
     border-radius: 5px;
 }
@@ -309,7 +314,7 @@ nav{
 }
 
 .is_active{
-    color: #015E48;
+    color: #024233;
     
 }
 .map_hover path{
@@ -444,7 +449,7 @@ g{
 
 .baramej{
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     text-align: right;
     
 }
@@ -604,10 +609,53 @@ g{
     color: #212529;
 
 }
+
+@media screen and (max-width:992px) {
+    .baramej_content{
+        flex-wrap: wrap;
+    }
+    .baramej_block{
+        margin: 1rem;
+    }
+    .main_block{
+        width: 100%;
+    }
+    .royal_body{
+        border: 1px solid red;
+        flex-direction: column;
+    }
+    .royal_content{
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        flex-grow: 2;
+        display: flex;
+    
+        align-items: center;
+    
+    }
+    .quick_links{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .map{
+        display: none;
+    }
+    
+    .top_section{
+        flex-direction: column;
+    }
+    .list{
+        flex-wrap: wrap;
+        
+    }
+
+}
 /**********Royal**********/
+
+
 .royal{
     width: 100%;
-    margin: 1rem;
 }
 .royal_heading{
     width: 90%;
@@ -715,11 +763,27 @@ g{
 .royal_block_text{
     margin-right: .5rem;
 }
+.royal_block_text p{
+    font-size: 1rem;
+    
+}
+.royal_block_text a{
+    font-size: .9rem;
+    color: #023328;
+    
+}
 .main_block{
     height: 400px;
    flex-grow: 2;
 }
-
+.main_block p{
+    font-size: 1rem;
+    margin-top: .5rem;
+}
+.main_block a{
+    font-size: .9rem;
+    color: #023328;
+}
 .main_block img{
     height: 300px;
     width: 100%;

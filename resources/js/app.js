@@ -63,7 +63,6 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
     
   });
 
@@ -93,14 +92,12 @@ paths.forEach(path => {
 });
 links.forEach(link => {
     link.addEventListener('mouseenter',function(e){
-        
-       
-        if(this.id!=='undifined'){
-            
+    
+        if(this.id!=='undifined'){ 
             document.querySelector('#'+this.id).classList.add('is_active');
             document.querySelector('#'+this.id.replace('link','m-link')).classList.add('map_hover');
         }
-        
+    
     });
     link.addEventListener('mouseleave',function(e){
         if(this.id!=='undifined'){
